@@ -1,0 +1,176 @@
+---
+title: "Rmarkdown Demo"
+author: "Nguyen Que Lam"
+date: "July 31, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+1. Tao Rmarkdown
+
+>File-> New fiel-> Rmarkdown  
+
+**Rmarkdown khac voi R Notebook**
+
+* R notebook ra doi sau Rmarkdown
+
+* R markdown chon .html, .PDF, .Word truoc khi xuat file con R notebook thi Preview roi sau do moi chon .html, .PDF,...
+
+* Rmarkdown chinh tieu de ngay khi tao file 
+
+2. Cac ung dung cua Rmarkdown
+
+**Tieu de**
+
+# h1
+## h2
+### h3
+#### h4
+##### h5
+
+**Nhan manh**
+
+*in nghieng* 
+
+**boi dam**
+
+***vua nghieng vua doi dam***
+
+**Chen link**
+
+
+[Markdown](http://https://vi.wikipedia.org/wiki/Markdown)
+
+[Cong thuc Toan](https://viblo.asia/p/su-dung-latex-soan-thao-cong-thuc-toan-hoc-amoG84a6Gz8P)
+
+[Cach viet CT theo latex](https://texmath.com/soan-thao-toan-hoc-trong-latex/?fbclid=IwAR2Quqm1peIK2UxIDBGZ0wVFL2FLbOoTVHEYoKbhow-pPD_5QJLQlxuRiZA)
+
+[Cac huong dan cua Rmarkdown](https://viblo.asia/helps/cach-su-dung-markdown-bxjvZYnwkJZ?fbclid=IwAR14U4Eyenm1K5SoL4xbvJodIut_nwULj93Ilp3IE7SWssAAFLy93EwEsZg)
+
+
+**Gach dau dong**
+
+* 1
+
+* 2
+
+1. 
+2. 
+
+**Blockquotes**
+
+>text
+
+
+**Chen Youtube**
+
+{@youtube: Youtube ID or URL}
+
+{@youtube:https://www.youtube.com/watch?v=XBuo6JNiYvk}
+
+**Chen git**
+
+{@gist: Gist ID or URL}
+
+{@gist: https://github.com/cungbac/baitap_ggplot/blob/nhanhquelam/baitap_dplyr/BTDPLYR50EX.R}
+`
+
+3. Cong thuc toan hoc
+
+**Cac ky hieu**
+
+**alpha**
+
+$$\alpha$$
+**beta**
+
+$$\beta$$
+**gamma**
+
+$$\gamma$$
+**pi**
+
+$$\pi$$
+**phi**
+
+$$\phi$$
+**theta**
+
+$$\theta$$
+**Cong thuc toan**
+
+**Chi so**
+
+$$k_{n+1}$$
+
+
+**So mu**
+
+$$n^2$$
+**Phan so**
+
+> frac{tu}{mau}
+
+$$\frac{3}{8}$$
+
+**Can so**
+
+> sqrt[n]{bieuthuc}
+
+$$\sqrt[3]{x+2}$$
+**Cac ham toan hoc**
+
+$$\sin$$
+$$\cos$$
+
+**Chen chu va pt**
+
+$$\text{Phuong trinh bac hai co dang}\\x^2+y=0\quad a \neq 0$$
+
+**Luyen tap**
+
+$$\frac{\Delta y}{\Delta x}=\frac{(y_1-y_0)^2}{(x_1-x_0)^5}$$
+**Vector **
+
+$$A = \left(
+\begin{array}{c}
+1 & 2 & 3 \\
+2 & 3 & 4 
+\end{array} 
+\right )$$
+
+**Ma tran**
+
+$$A= \left[
+\begin{matrix}
+1&2&3\\
+1&6&6
+\end{matrix}
+\right]$$
+
+**Code R**
+
+```{r,include=FALSE}
+datasets::cars
+```
+
+```{r,include=FALSE}
+library(dplyr)
+```
+
+```{r}
+head(iris) 
+str(iris)
+glimpse(iris) 
+class(iris)
+typeof(iris$Species)
+summary(iris)
+```
+
+
+
+
+
